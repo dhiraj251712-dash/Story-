@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>शब्दभित्रको घाउ - मेरो कथा</title>
+    <style>
+        :root {
+            --bg: #0f0c29;
+            --accent: #ff4b2b;
+            --text: #ffffff;
+            --glass: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            margin: 0;
+            background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+            color: var(--text);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px 20px;
+        }
+
+        .container { max-width: 800px; width: 100%; }
+
+        .header h1 {
+            font-size: 2.8rem;
+            text-align: center;
+            background: -webkit-linear-gradient(#ff416c, #ff4b2b);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 40px;
+        }
+
+        .poetry-card {
+            background: var(--glass);
+            backdrop-filter: blur(15px);
+            padding: 40px;
+            border-radius: 15px;
+            border-left: 5px solid var(--accent);
+            line-height: 2;
+            font-size: 1.2rem;
+            white-space: pre-line; /* शायरीको संरचना मिलाउन */
+            margin-bottom: 50px;
+        }
+
+        /* Comment Section Styles */
+        .comment-section {
+            background: var(--glass);
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 20px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border: none;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            box-sizing: border-box;
+        }
+
+        button {
+            background: var(--accent);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        #commentDisplay {
+            margin-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 20px;
+        }
+
+        .comment-item {
+            background: rgba(255,255,255,0.05);
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .comment-item strong { color: var(--accent); display: block; margin-bottom: 5px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>शब्दभित्रको घाउ</h1>
+    </div>
+
+    <div class="poetry-card">
+        अकस्मात एक साँझ टेक्स्टबाट कुरा सुरु भयो,
+        अञ्जान ती शब्दहरूमा एउटा संसार सुरु भयो।
+        हरेक पल, हरेक भावनाका कुराहरू साटिए,
+        थाहै नपाई मेरा सारा खुसी उनकै नाममा बाँटिए।
+
+        त्यही प्रेमको मीठो गुन्जनमा एउटा वर्ष बितेछ,
+        भन्न खोज्ने मेरो ओठ, डरले सधैँ चुकेछ।
+        एकदिन अचानक उनको भिडियो कल आयो,
+        उनका ती निर्दोष आँखाले मेरो होस नै उडायो।
+
+        हिम्मत जुटाएर मनको सारा व्यथा खोलिदिएँ,
+        वर्षौँदेखि साचेको प्रेमको प्रस्ताव राखिदिएँ।
+        "अहिले उमेर छैन" भन्दै सुरुमा त तर्किएकी थिइन्,
+        तर "माया त तिमीसँगै गर्छु" भन्दै अन्ततः उनले पनि स्विकारिन्।
+
+        समयको गतिसँगै हाम्रो सम्बन्ध अझै गाढा भयो,
+        साथीबाट सुरु भएको यात्रा, अब प्रेमको बाटोमा गयो।
+        फेरि एकपटक 'I Love You' को गुञ्जन हाम्रो बीचमा भयो,
+        मैले मुटु दिएँ, उनले पनि आफ्नो संसार सुम्पिएर गइन्।
+
+        तर भाग्यको खेल बुझ्न सायद हामीलाई बाँकी नै थियो,
+        हाम्रो मिलनको खुसी त केवल केही दिनको पाहुना थियो।
+        ११ को नतिजामा जब उनी असफल भइन्,
+        मेरो जिन्दगीको अँध्यारो दिनहरू त्यहीँबाट सुरु भए।
+
+        "मेरो बहिनी मलाई फर्काइदेऊ"– दिदीको त्यो आदेश आयो,
+        मेरो पवित्र प्रेममा, समाजको एउटा ठूलो अवरोध आयो।
+        अन्तिम पटक आफ्नो मायालाई आँखा भरि हेरेर बिदा भएँ,
+        त्यो दिनदेखि म एउटा 'प्रेमी' बाट 'शायर' मा बदलिएँ।
+    </div>
+
+    <div class="comment-section">
+        <h3>प्रतिक्रिया दिनुहोस्</h3>
+        <input type="text" id="nameInput" placeholder="तपाईँको नाम">
+        <textarea id="msgInput" placeholder="तपाईँको विचार यहाँ लेख्नुहोस्..."></textarea>
+        <button onclick="postComment()">पठाउनुहोस्</button>
+
+        <div id="commentDisplay">
+            </div>
+    </div>
+</div>
+
+<script>
+    function postComment() {
+        const name = document.getElementById('nameInput').value;
+        const msg = document.getElementById('msgInput').value;
+        const display = document.getElementById('commentDisplay');
+
+        if(name && msg) {
+            const newComment = document.createElement('div');
+            newComment.classList.add('comment-item');
+            newComment.innerHTML = `<strong>${name}</strong>${msg}`;
+            display.prepend(newComment);
+
+            // Clear inputs
+            document.getElementById('nameInput').value = '';
+            document.getElementById('msgInput').value = '';
+        } else {
+            alert("कृपया नाम र मेसेज दुवै लेख्नुहोस्।");
+        }
+    }
+</script>
+
+</body>
+</html>
